@@ -4,7 +4,6 @@ import os
 import time
 import openai
 import tenacity
-import nltk
 from keybert import KeyBERT
 import matplotlib.pyplot as plt
 
