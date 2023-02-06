@@ -7,7 +7,6 @@ import tenacity
 import nltk
 from keybert import KeyBERT
 import matplotlib.pyplot as plt
-os.environ['OPENAI_API_KEY'] = "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"
 
  
 
@@ -77,7 +76,7 @@ if choice == "2. Classification":
         
         prompt = row["Prompt"]
         # Send the prompt to the model
-        openai.api_key ='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'
+        openai.api_key = api_key
         response = completion_with_backoff (
             model= "ada:ft-singapore-polytechnic-2023-01-24-03-28-17",
             prompt= prompt + "\n\nIntent:\n\n",
