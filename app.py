@@ -75,7 +75,7 @@ if choice == "2. Classification":
         
         prompt = row["Prompt"]
         # Send the prompt to the model
-        openai.api_key = api_key
+        openai.api_key = st.secrets["api_key"]
         response = completion_with_backoff (
             model= "ada:ft-singapore-polytechnic-2023-01-24-03-28-17",
             prompt= prompt + "\n\nIntent:\n\n",
