@@ -60,6 +60,7 @@ if choice == "2. Classification":
     # Create an empty list to store the completions
     completions = []
     df1.columns = ['Prompt','Completion'] 
+    df1['Completion']=df1['Completion'].astype(str)
     
     # Loop through each row in the DataFrame
     for index, row in df1.iterrows():
