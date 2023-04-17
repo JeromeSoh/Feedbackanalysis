@@ -24,6 +24,7 @@ if os.path.exists("Completions.csv"):
 
 if choice == "1. Upload":
     st.title("Automated Feedback Analayzer")
+    st.info("Hi, welcome! This is a project that i came up during my internship with a local bank, using AI to analyse feedback for an app. :warning: However, my API usage with OpenAI has expired :warning:. Please contact me if you want to find out more about the project!	:envelope_with_arrow:")
     st.header('Step1: Uploading feedback in CSV')
     st.caption(":warning: Before uploading, make sure you have prepared the following:")
     checkbox1 = st.checkbox(" Place your feedback under a column and name the column header as: 'Feedback'")
